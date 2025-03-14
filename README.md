@@ -20,38 +20,44 @@ Ensure you have the following installed:
 - SSH Key (`~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`)
 
 ## Deployment Steps
-1. **Clone this project:**
+### 1. **Clone the Repository**
    ```sh
    git clone https://github.com/stefansnoek/ansiform.git
    cd ansiform
-
-2. **Configure Azure Authentication**
+   ```
+### 2. **Configure Azure Authentication**
 
    Login to Azure:
    ```sh
    az login
-
-3. **Deploy Infrastructure with**
+   ```
+### 3. **Deploy Infrastructure with Terraform**
    ```sh
    cd terraform
    terraform init
    terraform apply
-
+   ```
    This will create the required Azure resources, including the **VM, database, and storage account.**
-4. **Execute Ansible to configure the web server**
+### 4. **Configure the Web Server with Ansible**
+
+   Once Terraform completes, Ansible will configure the web server
    ```sh
    cd ../ansible
    ansible-playbook -i inventory.ini playbook.yml
+   ```
+### 5. **Access the Web Application**
 
-5. **Access the Web Application**
    After deployment, you can access the web server via:
    ```sh
    http://<your-public-ip>
-   sh
+   ```
    Find your public IP using:
-   
    ```sh
    terraform output public_ip
+   ```
 
+## Additional Documentation
+- Terraform Guide
+- Ansible Guide
 
-   
+For detailed setup, see the ```/docs/``` folder.
