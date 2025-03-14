@@ -57,7 +57,8 @@ Ensure you have the following installed:
    ```
 
 ## Additional Documentation
-- Terraform Guide
-- Ansible Guide
+- [Terraform Guide](docs/terraform.md)
+- [Ansible Guide](docs/ansible.md)
+- [Architecture Overview](docs/architecture.md)
 
 For detailed setup, see the ```/docs/``` folder.
