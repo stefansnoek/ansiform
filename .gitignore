@@ -1,0 +1,24 @@
+# Terraform bestanden die niet gedeeld moeten worden
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+crash.log
+*.log
+
+# Ansible bestanden die gevoelige data kunnen bevatten
+ansible/*.vault
+ansible/*.pem
+ansible/.ssh/
+ansible/inventory.ini
+
+# SSH keys en credentials
+~/.ssh/
+*.pem
+id_rsa
+id_rsa.pub
+
+# Editor- en systeembestanden
+.vscode/
+.idea/
+__pycache__/
