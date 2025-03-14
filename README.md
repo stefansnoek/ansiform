@@ -18,3 +18,22 @@ Ensure you have the following installed:
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
 - [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 - SSH Key (`~/.ssh/id_rsa` and `~/.ssh/id_rsa.pub`)
+
+## Installation and usage
+1. **Clone this project:**
+   ```sh
+   git clone https://github.com/stefansnoek/ansiform.git
+   cd ansiform
+
+2. **Init Terraform & resource**
+   ```sh
+   git clone https://github.com/stefansnoek/ansiform.git
+   cd ansiform
+
+3. **Execute Ansible to configure the web server**
+   ```sh
+   cd ../ansible
+   ansible-playbook -i inventory.ini playbook.yml
+
+4. **Test the web server**
+   Open a browser and navigate to http://<VM_PUBLIC_IP>
