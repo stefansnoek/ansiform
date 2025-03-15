@@ -12,3 +12,5 @@
 - **Port 80 (HTTP):** Open for access to the web server
 - **Virtual Network:** 10.0.0.0/16
 - **Subnet IP-range:** 10.0.1.0/24
+
+![ansiform drawio](https://github.com/user-attachments/assets/381ae3a8-f7bc-470b-8af8-9896bbb1cdf0)
