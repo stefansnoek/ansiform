@@ -114,7 +114,3 @@ resource "azurerm_storage_account" "storage"{
     account_tier = "Standard"
     account_replication_type = "LRS"
 }
-
-output "public_ip" {
-    value = azurerm_public_ip.webapp_ip.ip_address
-}
